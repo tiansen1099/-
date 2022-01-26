@@ -1,0 +1,58 @@
+@import '~antd/lib/style/themes/default.less';
+
+.dataPreviewContent {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  color: #3f4b59;
+  background: #fff;
+
+  .tableInput {
+    margin-bottom: 10px;
+
+    .selectContainer {
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    .previewButtonContainer {
+      height: 32px;
+      margin-top: 10px;
+      margin-right: 10px;
+    }
+
+    .lastInfoCollapsePanel {
+      margin-bottom: 20px;
+      color: #3f4b59;
+      background: #fff;
+      border: 1px solid #dfe3e9;
+    }
+  }
+
+  .dataContainer {
+    .paginationContainer {
+      margin-bottom: 10px;
+
+      .totalShow {
+        line-height: 32px;
+        text-align: right;
+        margin-right: 10px;
+      }
+    }
+
+    .tableContainer {
+      padding: 0;
+      border-top: none;
+      :global{
+        .ant-table-content{
+          .ant-table-scroll{
+            .ant-table-placeholder {
+              padding: 0;
+              border-top: none;
+            }
+            }
+        }
+      }
+    }
+  }
+}

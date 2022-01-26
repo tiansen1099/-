@@ -1,0 +1,243 @@
+@import '~antd/lib/style/themes/default.less';
+
+.repositoryPage {
+  width: 100%;
+  height: calc(100vh - 70px);
+  padding: 20px 20px 0px 20px;
+}
+
+.repositoryContent {
+  width: 100%;
+  height: 100%;
+
+  :global {
+    .ant-tabs .ant-tabs-top-content,
+    .ant-tabs .ant-tabs-bottom-content {
+      width: 100%;
+      height: 100%;
+    }
+
+    .ant-tabs-tabpane-active {
+      height: 100%;
+    }
+    .ant-tabs-tabpane-inactive {
+      height: 0;
+    }
+  }
+
+  .filterSider {
+    width: 200px;
+    height: 100%;
+    background: #fff;
+    border-right: 1px solid #e8e8e8;
+
+    .filterTitle {
+      height: 40px;
+      padding-left: 15px;
+      color: #3f4b59;
+      font-weight: bolder;
+      font-size: 12px;
+      font-family: AlibabaPuHuiTiM, sans-serif;
+      line-height: 40px;
+      border-bottom: 1px solid #e8e8e8;
+    }
+
+    .filterContent {
+      width: 100%;
+      overflow-x: auto;
+      overflow-y: auto;
+    }
+  }
+
+  .mainContent {
+    width: 100%;
+    height: 100%;
+
+    .tabContent {
+      width: 100%;
+      min-height: calc(100% - 40px);
+      overflow-y: auto;
+
+      .repositoryHome {
+        width: 100%;
+        height: 100%;
+
+        .homeContent {
+          position: absolute;
+          top: 50%;
+          width: 100%;
+          margin-top: -105px;
+          text-align: center;
+
+          .homeSearch {
+            display: inline-block;
+            width: calc(100% - 250px);
+            margin: 0px auto;
+
+            .homeSearchTitle {
+              margin-bottom: 10px;
+              font-weight: bolder;
+              font-size: 14px;
+              text-align: left;
+            }
+          }
+        }
+      }
+
+      .assetContent {
+        padding-top: 15px;
+        padding-right: 15px;
+        padding-left: 15px;
+
+        .assetSearchDiv {
+          display: inline-block;
+          width: 100%;
+          padding-bottom: 12px;
+          text-align: center;
+        }
+
+        .changeTrackSelectDiv {
+          display: inline-block;
+          width: 100%;
+          padding-bottom: 12px;
+        }
+
+        .changeTrackSelectContentDiv {
+          margin-left: 20px;
+        }
+
+        .assetFilterDiv {
+          display: inline-block;
+          width: 100%;
+          padding-bottom: 12px;
+        }
+
+        .sumInfoDiv {
+          padding-left: 8px;
+          font-weight: bolder;
+        }
+
+        .filterInfoDiv {
+          padding-top: 10px;
+          padding-left: 16px;
+        }
+
+        .emptyContent {
+          height: 80%;
+          min-height: 300px;
+          padding-top: 10%;
+
+          .emptyText {
+            color: #7c8b9a;
+          }
+        }
+
+        .assetList {
+          .assetInfoArea {
+            position: relative;
+            min-height: 96px;
+            border-bottom: 1px solid #e8e8e8;
+          }
+
+          .changeTrackInfoArea {
+            position: relative;
+            min-height: 100px;
+            border-bottom: 1px solid #e8e8e8;
+          }
+
+          .assetIconArea {
+            position: absolute;
+            width: 67px;
+
+            .assetIcon {
+              width: 32px;
+              height: 32px;
+              margin-top: 15px;
+              margin-left: 15px;
+            }
+          }
+
+          .assetAttrArea {
+            position: absolute;
+            width: -webkit-fill-available;
+            margin-left: 67px;
+
+            .assetTitleRow {
+              height: 38px;
+
+              .assetTitleType {
+                display: inline-block;
+                height: 100%;
+                padding-top: 12px;
+                font-weight: bolder;
+                font-size: 14px;
+                vertical-align: top;
+              }
+
+              .assetTitle {
+                display: inline-block;
+                height: 100%;
+                padding-top: 12px;
+                font-weight: bolder;
+                font-size: 14px;
+                vertical-align: top;
+                cursor: pointer;
+              }
+
+              .assetTitle:hover {
+                color: #2c8df4;
+              }
+
+              .termArea {
+                display: inline-block;
+                height: 100%;
+                margin-left: 10px;
+                padding-top: 13px;
+                font-weight: bolder;
+                font-size: 12px;
+
+                .termIcon {
+                  display: inline-block;
+                  width: 18px;
+                  height: 18px;
+                  vertical-align: top;
+                }
+
+                .termTitle {
+                  display: inline-block;
+                }
+              }
+            }
+
+            .assetAttr {
+              height: 16px;
+              overflow: hidden;
+              font-size: 12px;
+              line-height: 16px;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+            }
+
+            .assetDescription {
+              height: 14px;
+              margin-top: 15px;
+              margin-bottom: 15px;
+              overflow: hidden;
+              font-size: 12px;
+              line-height: 14px;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+            }
+          }
+
+          .assetPagination {
+            float: right;
+            margin-top: 15px;
+            margin-right: 10px;
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+}

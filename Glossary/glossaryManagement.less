@@ -1,0 +1,577 @@
+@import '../../../../node_modules/antd/lib/style/themes/default.less';
+
+.indexContent {
+  height: calc(100vh - 70px);
+  overflow-y: auto;
+  color: #3f4b59;
+
+  :global {
+    .ant-table-small {
+      border-right: 0px !important;
+      border-left: 0px !important;
+    }
+
+    .ant-table-small > .ant-table-content > .ant-table-body {
+      margin: 0;
+    }
+
+    .ant-table-small > .ant-table-content > .ant-table-header > table > .ant-table-thead > tr > th,
+    .ant-table-small > .ant-table-content > .ant-table-body > table > .ant-table-thead > tr > th,
+    .ant-table-small
+    > .ant-table-content
+    > .ant-table-scroll
+    > .ant-table-header
+    > table
+    > .ant-table-thead
+    > tr
+    > th,
+    .ant-table-small
+    > .ant-table-content
+    > .ant-table-scroll
+    > .ant-table-body
+    > table
+    > .ant-table-thead
+    > tr
+    > th,
+    .ant-table-small
+    > .ant-table-content
+    > .ant-table-fixed-left
+    > .ant-table-header
+    > table
+    > .ant-table-thead
+    > tr
+    > th,
+    .ant-table-small
+    > .ant-table-content
+    > .ant-table-fixed-right
+    > .ant-table-header
+    > table
+    > .ant-table-thead
+    > tr
+    > th,
+    .ant-table-small
+    > .ant-table-content
+    > .ant-table-fixed-left
+    > .ant-table-body-outer
+    > .ant-table-body-inner
+    > table
+    > .ant-table-thead
+    > tr
+    > th,
+    .ant-table-small
+    > .ant-table-content
+    > .ant-table-fixed-right
+    > .ant-table-body-outer
+    > .ant-table-body-inner
+    > table
+    > .ant-table-thead
+    > tr
+    > th {
+      background-color: #fafafa;
+    }
+
+    .ant-table-column-title {
+      color: #3f4b59;
+      font-size: 12px;
+      letter-spacing: 0;
+      text-align: left;
+    }
+
+    .ant-table-small > .ant-table-content > .ant-table-header > table > .ant-table-thead > tr > th,
+    .ant-table-small > .ant-table-content > .ant-table-body > table > .ant-table-thead > tr > th,
+    .ant-table-small
+    > .ant-table-content
+    > .ant-table-scroll
+    > .ant-table-header
+    > table
+    > .ant-table-thead
+    > tr
+    > th,
+    .ant-table-small
+    > .ant-table-content
+    > .ant-table-scroll
+    > .ant-table-body
+    > table
+    > .ant-table-thead
+    > tr
+    > th,
+    .ant-table-small
+    > .ant-table-content
+    > .ant-table-fixed-left
+    > .ant-table-header
+    > table
+    > .ant-table-thead
+    > tr
+    > th,
+    .ant-table-small
+    > .ant-table-content
+    > .ant-table-fixed-right
+    > .ant-table-header
+    > table
+    > .ant-table-thead
+    > tr
+    > th,
+    .ant-table-small
+    > .ant-table-content
+    > .ant-table-fixed-left
+    > .ant-table-body-outer
+    > .ant-table-body-inner
+    > table
+    > .ant-table-thead
+    > tr
+    > th,
+    .ant-table-small
+    > .ant-table-content
+    > .ant-table-fixed-right
+    > .ant-table-body-outer
+    > .ant-table-body-inner
+    > table
+    > .ant-table-thead
+    > tr
+    > th,
+    .ant-table-small > .ant-table-content > .ant-table-header > table > .ant-table-tbody > tr > td,
+    .ant-table-small > .ant-table-content > .ant-table-body > table > .ant-table-tbody > tr > td,
+    .ant-table-small
+    > .ant-table-content
+    > .ant-table-scroll
+    > .ant-table-header
+    > table
+    > .ant-table-tbody
+    > tr
+    > td,
+    .ant-table-small
+    > .ant-table-content
+    > .ant-table-scroll
+    > .ant-table-body
+    > table
+    > .ant-table-tbody
+    > tr
+    > td,
+    .ant-table-small
+    > .ant-table-content
+    > .ant-table-fixed-left
+    > .ant-table-header
+    > table
+    > .ant-table-tbody
+    > tr
+    > td,
+    .ant-table-small
+    > .ant-table-content
+    > .ant-table-fixed-right
+    > .ant-table-header
+    > table
+    > .ant-table-tbody
+    > tr
+    > td,
+    .ant-table-small
+    > .ant-table-content
+    > .ant-table-fixed-left
+    > .ant-table-body-outer
+    > .ant-table-body-inner
+    > table
+    > .ant-table-tbody
+    > tr
+    > td,
+    .ant-table-small
+    > .ant-table-content
+    > .ant-table-fixed-right
+    > .ant-table-body-outer
+    > .ant-table-body-inner
+    > table
+    > .ant-table-tbody
+    > tr
+    > td {
+      color: #7c8b9a;
+      letter-spacing: 0;
+      text-align: left;
+    }
+  }
+
+  .contentBodyBackground {
+    height: 100%;
+    padding: 15px;
+    background: #ebeff3;
+
+    .contentBody {
+      height: 100%;
+      padding: 15px;
+      background: #fff;
+
+      .tableContainer {
+        position: relative;
+        color: #3f4b59;
+
+        .tableRow {
+          margin-top: 10px;
+        }
+
+        .tableColumnTitle {
+          color: #3f4b59;
+          font-weight: 600;
+        }
+
+        .tableCellBlue {
+          color: #2c8df4;
+        }
+
+        .totalDesc {
+          position: absolute;
+          left: 0px;
+        }
+      }
+
+      .dialogContainer {
+        font-size: 12px;
+        font-family: AlibabaPuHuiTiR, sans-serif;
+
+        .dialogTitle {
+          color: #3f4b59;
+          font-weight: bold;
+        }
+
+        .assetIcon {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+}
+
+.collection-create-form_last-form-item {
+  margin-bottom: 0;
+}
+
+.leftMenu {
+  width: 90%;
+  border-right: 1px @border-style-base #d1d7de;
+}
+
+.title {
+  padding: 10px 0 5px 20px;
+  color: #444;
+  font-weight: 200;
+  font-size: 14px;
+  // font-family: AlibabaPuHuiTiM, sans-serif;
+  border-bottom: 1px @border-style-base #d1d7de;
+}
+
+.link{
+  margin-left: 15px;
+}
+
+.treeHeight{
+  height: 485px;
+}
+
+.searchDiv {
+  padding-top: 15px;
+  text-align: center;
+}
+
+.searchTreeDiv {
+  // margin-bottom: 100px;
+  .searchDiv {
+    padding-top: 15px;
+    text-align: center;
+  }
+  .treeDiv {
+    padding-left: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    .treeNodeHover {
+      display: block;
+      width: 100%;
+      font-size: 12px;
+      // font-family: AlibabaPuHuiTiR, sans-serif;
+      .treeNodeTitle {
+        display: inline-block;
+        width: calc(100% - 24px);
+        margin-top: 2px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .showOperation {
+        display: none;
+        float: right;
+        width: 20px;
+        padding-left: 5px;
+        :global {
+          .icon-tree-operation-icon {
+            margin-left: -10px;
+            padding-top: 9px;
+          }
+        }
+      }
+    }
+    :global {
+      /* 去掉树前的icon */
+      .ant-tree.ant-tree-directory
+      > li
+      span.ant-tree-node-content-wrapper
+      .ant-tree-iconEle.ant-tree-icon__customize {
+        display: none;
+      }
+
+      /* 鼠标停在树节点效果 */
+      .ant-tree.ant-tree-directory > li span.ant-tree-node-content-wrapper:hover::before,
+      .ant-tree.ant-tree-directory
+      .ant-tree-child-tree
+      > li
+      span.ant-tree-node-content-wrapper:hover::before {
+        height: 28px;
+        background: #eaf7ff;
+        border-left: 2px solid #1890ff;
+      }
+      .ant-tree.ant-tree-directory {
+        padding-left: 15px;
+      }
+
+      /*  树节点选中 */
+      .ant-tree.ant-tree-directory
+      > li.ant-tree-treenode-selected
+      > span.ant-tree-node-content-wrapper::before,
+      .ant-tree.ant-tree-directory
+      .ant-tree-child-tree
+      > li.ant-tree-treenode-selected
+      > span.ant-tree-node-content-wrapper::before {
+        height: 28px;
+        background: #eaf7ff !important;
+        border-left: 2px solid #1890ff;
+      }
+
+      /* 树节点选中图标 */
+      :root .ant-tree li span.ant-tree-switcher.ant-tree-switcher_open .ant-tree-switcher-icon,
+      :root .ant-tree li span.ant-tree-switcher.ant-tree-switcher_open .ant-select-switcher-icon,
+      .ant-tree.ant-tree-directory > li.ant-tree-treenode-selected > span.ant-tree-switcher,
+      .ant-tree.ant-tree-directory
+      .ant-tree-child-tree
+      > li.ant-tree-treenode-selected
+      > span.ant-tree-switcher {
+        color: #443b3b !important;
+      }
+
+      /* 树节点选中文字 */
+      .content-wrapper.ant-tree-node-selected,
+      .ant-tree.ant-tree-directory
+      .ant-tree-child-tree
+      > li
+      span.ant-tree-node-content-wrapper.ant-tree-node-selected,
+      .ant-tree.ant-tree-directory > li span.ant-tree-node-content-wrapper.ant-tree-node-selected {
+        color: #2c8df4 !important;
+      }
+
+      .ant-tree.ant-tree-directory > li span.ant-tree-node-content-wrapper,
+      .ant-tree.ant-tree-directory .ant-tree-child-tree > li span.ant-tree-node-content-wrapper {
+        width: calc(100% - 15px);
+      }
+    }
+  }
+}
+
+.dialogContainer {
+  font-size: 12px;
+  font-family: AlibabaPuHuiTiR, sans-serif;
+
+  .dialogTitle {
+    font-weight: bold;
+    color: #3f4b59;
+  }
+
+  .assetIcon {
+    width: 24px;
+    height: 24px;
+  }
+  .mainContent {
+    width: 100%;
+    height: 100%;
+
+    .tabContent {
+      width: 100%;
+      min-height: calc(100% - 40px);
+      overflow-y: auto;
+
+      .repositoryHome {
+        width: 100%;
+        height: 100%;
+
+        .homeContent {
+          position: absolute;
+          top: 50%;
+          width: 100%;
+          margin-top: -105px;
+          text-align: center;
+
+          .homeSearch {
+            display: inline-block;
+            width: calc(100% - 250px);
+            margin: 0px auto;
+
+            .homeSearchTitle {
+              margin-bottom: 10px;
+              font-weight: bolder;
+              font-size: 14px;
+              text-align: left;
+            }
+          }
+        }
+      }
+
+      .assetContent {
+        padding-top: 15px;
+        padding-right: 15px;
+        padding-left: 15px;
+
+        .assetSearchDiv {
+          display: inline-block;
+          width: 100%;
+          padding-bottom: 12px;
+          text-align: center;
+        }
+
+        .changeTrackSelectDiv {
+          display: inline-block;
+          width: 100%;
+          padding-bottom: 12px;
+        }
+
+        .changeTrackSelectContentDiv {
+          margin-left: 20px;
+        }
+
+        .assetFilterDiv {
+          display: inline-block;
+          width: 100%;
+          padding-bottom: 12px;
+        }
+
+        .sumInfoDiv {
+          padding-left: 8px;
+          font-weight: bolder;
+        }
+
+        .filterInfoDiv {
+          padding-top: 10px;
+          padding-left: 16px;
+        }
+
+        .emptyContent {
+          height: 80%;
+          min-height: 300px;
+          padding-top: 10%;
+
+          .emptyText {
+            color: #7c8b9a;
+          }
+        }
+
+        .assetList {
+          .assetInfoArea {
+            position: relative;
+            min-height: 96px;
+            border-bottom: 1px solid #e8e8e8;
+          }
+
+          .changeTrackInfoArea {
+            position: relative;
+            min-height: 100px;
+            border-bottom: 1px solid #e8e8e8;
+          }
+
+          .assetIconArea {
+            position: absolute;
+            width: 67px;
+
+            .assetIcon {
+              width: 32px;
+              height: 32px;
+              margin-top: 15px;
+              margin-left: 15px;
+            }
+          }
+
+          .assetAttrArea {
+            position: absolute;
+            width: -webkit-fill-available;
+            margin-left: 67px;
+
+            .assetTitleRow {
+              height: 38px;
+
+              .assetTitleType {
+                display: inline-block;
+                height: 100%;
+                padding-top: 12px;
+                font-weight: bolder;
+                font-size: 14px;
+                vertical-align: top;
+              }
+
+              .assetTitle {
+                display: inline-block;
+                height: 100%;
+                padding-top: 12px;
+                font-weight: bolder;
+                font-size: 14px;
+                vertical-align: top;
+                cursor: pointer;
+              }
+
+              .assetTitle:hover {
+                color: #2c8df4;
+              }
+
+              .termArea {
+                display: inline-block;
+                height: 100%;
+                margin-left: 10px;
+                padding-top: 13px;
+                font-weight: bolder;
+                font-size: 12px;
+
+                .termIcon {
+                  display: inline-block;
+                  width: 18px;
+                  height: 18px;
+                  vertical-align: top;
+                }
+
+                .termTitle {
+                  display: inline-block;
+                }
+              }
+            }
+
+            .assetAttr {
+              height: 16px;
+              overflow: hidden;
+              font-size: 12px;
+              line-height: 16px;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+            }
+
+            .assetDescription {
+              height: 14px;
+              margin-top: 15px;
+              margin-bottom: 15px;
+              overflow: hidden;
+              font-size: 12px;
+              line-height: 14px;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+            }
+          }
+
+          .assetPagination {
+            float: right;
+            margin-top: 15px;
+            margin-right: 10px;
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+}
